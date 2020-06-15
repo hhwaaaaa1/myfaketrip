@@ -1,8 +1,7 @@
 import Head from "next/head"
+import Test from "src/components/Test"
 
 export default function Home() {
-  console.log("??")
-
   return (
     <div className="container">
       <Head>
@@ -11,6 +10,8 @@ export default function Home() {
       </Head>
 
       <main>
+        <Test />
+
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
