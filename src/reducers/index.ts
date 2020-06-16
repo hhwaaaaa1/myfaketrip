@@ -1,10 +1,10 @@
-import { combineReducers } from "redux"
-import count from "./count"
-
-export type RootState = ReturnType<typeof rootReducer>
+import { combineReducers } from 'redux'
+import count from './count'
 
 const rootReducer = combineReducers({
   count,
 })
+
+export type RootState = ReturnType<typeof rootReducer>
 
 export default rootReducer

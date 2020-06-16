@@ -2,21 +2,27 @@ type CounterState = {
   count: number
 }
 
-type CounterAction =
-  | ReturnType<typeof countPlusAction>
-  | ReturnType<typeof countMinusAction>
-
 export const initialState: CounterState = {
   count: 0,
 }
 
-export const COUNT_PLUS = "COUNT_PLUS" as const
-export const COUNT_MINUS = "COUNT_MINUS" as const
+export const COUNT_PLUS = 'COUNT_PLUS' as const
+export const COUNT_MINUS = 'COUNT_MINUS' as const
 
-export const countPlusAction = () => ({ type: COUNT_PLUS })
-export const countMinusAction = () => ({ type: COUNT_MINUS })
+interface CountPlusAction {
+  type: typeof COUNT_PLUS
+}
 
-const reducer = (state: CounterState = initialState, action: CounterAction) => {
+interface CountMinusAction {
+  type: typeof COUNT_MINUS
+}
+
+export const countPlusAction = (): CountPlusAction => ({ type: COUNT_PLUS })
+export const countMinusAction = (): CountMinusAction => ({ type: COUNT_MINUS })
+
+type CounterAction = ReturnType<typeof countPlusAction> | ReturnType<typeof countMinusAction>
+
+const reducer = (state: CounterState = initialState, action: CounterAction): CounterState => {
   switch (action.type) {
     case COUNT_PLUS:
       return {

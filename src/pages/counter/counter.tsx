@@ -1,7 +1,7 @@
-import React, { useCallback } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { countPlusAction, countMinusAction } from "src/reducers/count"
-import { DefaultRootState } from "src/types/rootState"
+import React, { useCallback } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { countPlusAction, countMinusAction } from 'src/reducers/count'
+import { DefaultRootState } from 'src/types/rootState'
 
 const Counter = () => {
   const dispatch = useDispatch()
