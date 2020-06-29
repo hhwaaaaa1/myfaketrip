@@ -1,0 +1,28 @@
+import React from 'react'
+
+export function SpotIcon() {
+  return (
+    <img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjNTFBQkYzIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDIyLjQ2OWM1LjUxNS01LjI1MyA4LjI1LTkuNDIxIDguMjUtMTIuMzk4IDAtNC41OTctMy42OTUtOC4zMjEtOC4yNS04LjMyMXMtOC4yNSAzLjcyNC04LjI1IDguMzJjMCAyLjk3OCAyLjczNSA3LjE0NiA4LjI1IDEyLjM5OXpNMTIgMTNhMyAzIDAgMSAxIDAtNiAzIDMgMCAwIDEgMCA2eiIvPgo8L3N2Zz4K"
+      alt=""
+    />
+  )
+}
+
+export function CalendarIcon() {
+  return (
+    <img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjNTFBQkYzIiBzdHJva2Utd2lkdGg9IjEuNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMyAyKSI+CiAgICAgICAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZD0iTTEuNSA4Ljc1aDE1Ii8+CiAgICAgICAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNNC43NS41djJNMTIuNzUuNXYyIi8+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjE2LjUiIGhlaWdodD0iMTYuNSIgeD0iLjc1IiB5PSIyLjc1IiByeD0iMiIvPgogICAgPC9nPgo8L3N2Zz4K"
+      alt=""
+    />
+  )
+}
+
+export function PeopleIcon() {
+  return (
+    <img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjNTFBQkYzIiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICAgICAgPHBhdGggZD0iTTEyIDEzLjc1Yy00LjUxNyAwLTguMjUgMi44MjMtOC4yNSA2LjI1IDAgLjY5LjU2IDEuMjUgMS4yNSAxLjI1aDE0Yy42OSAwIDEuMjUtLjU2IDEuMjUtMS4yNSAwLTMuNDI3LTMuNzMzLTYuMjUtOC4yNS02LjI1ek0xMiAxMS4yNUE0LjI0OSA0LjI0OSAwIDAgMCAxNi4yNSA3IDQuMjQ5IDQuMjQ5IDAgMCAwIDEyIDIuNzUgNC4yNDkgNC4yNDkgMCAwIDAgNy43NSA3IDQuMjQ5IDQuMjQ5IDAgMCAwIDEyIDExLjI1eiIvPgogICAgPC9nPgo8L3N2Zz4K"
+      alt=""
+    />
+  )
+}

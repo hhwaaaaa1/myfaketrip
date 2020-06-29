@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Test from 'src/components/Test'
 
 export default function Home(): JSX.Element {
   return (
@@ -11,8 +10,6 @@ export default function Home(): JSX.Element {
       </Head>
 
       <main>
-        <Test />
-
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>

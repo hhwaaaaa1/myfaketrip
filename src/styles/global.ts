@@ -28,4 +28,10 @@ export default css.global`
     letter-spacing: -0.2px;
     -webkit-font-smoothing: antialiased;
   }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 `

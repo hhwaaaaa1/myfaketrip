@@ -1,6 +1,6 @@
 import React from 'react'
 import globalStyles from 'src/styles/global'
-import HotelSearchForm from 'src/components/HotelSearch/HotelSearchForm'
+import HotelSearchForm from 'src/components/HotelSearchForm'
 
 function hotels(): JSX.Element {
   return (
