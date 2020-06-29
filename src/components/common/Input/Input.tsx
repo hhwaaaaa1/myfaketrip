@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const InputWrap = styled.div<InputType>`
   border: 0;
-  background-color: none;
+  background-color: #f1f3f5;
   position: relative;
   display: flex;
   align-items: center;
@@ -23,17 +23,21 @@ const InputWrap = styled.div<InputType>`
     top: 8px;
   }
   &.active {
-    border-left: 1px solid #dee3e2;
-    border-bottom: 1px solid #dee3e2;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(52, 58, 64, 0.15), 0 0 1px 0 rgba(52, 58, 64, 0.2);
+    color: #495056;
   }
 `
 
 const InputText = styled.input`
   border: 0px;
-  background-color: none;
+  background-color: #f1f3f5;
   outline: none;
   margin-left: 15px;
   width: 100%;
+  &.active {
+    background-color: #fff;
+  }
 `
 
 type InputType = {
@@ -50,7 +54,7 @@ function Input({ image, placeholder }: InputType): JSX.Element {
 
   return (
     <InputWrap image={image} className={input === true ? 'active' : ''} onClick={() => handleInput()}>
-      <InputText placeholder={placeholder} />
+      <InputText placeholder={placeholder} className={input === true ? 'active' : ''} />
     </InputWrap>
   )
 }

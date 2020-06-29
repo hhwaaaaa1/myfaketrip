@@ -7,16 +7,16 @@ type LogoProps = {
 }
 
 const LogoWrap = styled.div<LogoProps>`
-  width: ${props => (props.logoWidth ? props.logoWidth : 'width:150px')};
+  width: ${props => (props.logoWidth ? props.logoWidth : '150px')};
 `
 
 const LogoImage = styled.img`
   width: 100%;
 `
 
-function Logo({ image }: LogoProps): JSX.Element {
+function Logo({ image, logoWidth }: LogoProps): JSX.Element {
   return (
-    <LogoWrap>
+    <LogoWrap logoWidth={logoWidth}>
       <LogoImage src={image} alt={image} />
     </LogoWrap>
   )
