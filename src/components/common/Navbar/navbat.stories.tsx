@@ -36,6 +36,6 @@ const list = [
 
 export const Navbars: React.FC = () => (
   <div>
-    <Navbar list={list} />
+    <Navbar list={list} fontSize={''} />
   </div>
 )

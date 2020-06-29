@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export type NavbarProps = {
   list?: [] | any
   badge?: boolean
+  fontSize?: string
 }
 
 export type NavbarItemProps = {
@@ -24,6 +25,7 @@ const NavbarItem = styled.li`
   color: #999;
   padding: 10px;
   position: relative;
+  font-size: ${props => props.fontSize && props.fontSize};
   &.active {
     color: #333;
     &::after {
@@ -67,7 +69,7 @@ const Badge = styled.div`
   }
 `
 
-function Navbar({ list }: NavbarProps): JSX.Element {
+function Navbar({ list, fontSize }: NavbarProps): JSX.Element {
   const [index, setIndex]: any = useState(0)
 
   const handleClick = (i: number) => {
@@ -78,7 +80,12 @@ function Navbar({ list }: NavbarProps): JSX.Element {
     <NavbarWrap>
       {list?.map((data: NavbarItemProps, i: number) => {
         return (
-          <NavbarItem key={i} className={`${index === i ? 'active' : ''}`} onClick={() => handleClick(i)}>
+          <NavbarItem
+            key={i}
+            className={`${index === i ? 'active' : ''}`}
+            onClick={() => handleClick(i)}
+            fontSize={fontSize}
+          >
             {data?.badge && (
               <Badge>
                 <span>N</span>
