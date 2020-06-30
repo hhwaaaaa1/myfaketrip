@@ -5,8 +5,8 @@ import { createStore, compose, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import createSagaMiddleware from 'redux-saga'
 import withReduxSaga from 'next-redux-saga'
-import reducer from 'src/reducers'
-// import rootSaga from 'src/sagas'; // lint warning 때문에 잠시 주석처리
+import reducer from '@src/reducers'
+// import rootSaga from '@src/sagas'; // lint warning 때문에 잠시 주석처리
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>

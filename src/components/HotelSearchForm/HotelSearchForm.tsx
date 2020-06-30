@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Grid from 'src/components/common/Grid'
-import { SpotIcon, CalendarIcon, PeopleIcon } from 'src/components/common/Icons'
+import Grid from '@src/components/common/Grid'
+import { SpotIcon, CalendarIcon, PeopleIcon } from '@src/components/common/Icons'
 
 function HotelSearchForm(): JSX.Element {
   return (
