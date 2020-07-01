@@ -1,15 +1,30 @@
 import React from 'react'
 import Link from 'next/link'
+import Popper from '@src/components/common/Popper'
+import * as S from './GlobalHeader.styled'
 
 function GlobalHeader(): JSX.Element {
   return (
-    <header>
+    <S.Header>
       <div>
         <div>
           <h1>
-            <img src="" alt="my fake trip" />
+            <S.Logo src="/logo.png" alt="my fake trip" />
           </h1>
-          <input type="search" placeholder="여행지나 상품을 검색해보세요." title="전체 검색" />
+          <div>
+            <input type="search" placeholder="여행지나 상품을 검색해보세요." title="전체 검색" />
+            <button type="button">삭제</button>
+            <Popper>
+              <ul>
+                <li>
+                  <button type="button">제주도</button>
+                </li>
+                <li>
+                  <button type="button">제주도 렌트카</button>
+                </li>
+              </ul>
+            </Popper>
+          </div>
         </div>
         <div>
           <Link href="#">파트너 등록하기</Link>
@@ -28,7 +43,7 @@ function GlobalHeader(): JSX.Element {
           <Link href="#">할인혜택</Link>
         </nav>
       </div>
-    </header>
+    </S.Header>
   )
 }
 
