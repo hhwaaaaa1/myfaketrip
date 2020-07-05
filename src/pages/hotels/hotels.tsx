@@ -28,6 +28,24 @@ function Hotels(): JSX.Element {
         h6 {
           margin: 0;
         }
+
+        input {
+          padding: 0;
+          font: inherit;
+          border: 0;
+        }
+
+        button {
+          padding: 0;
+          border: 0;
+          background: none;
+        }
+
+        a {
+          font: inherit;
+          color: inherit;
+          text-decoration: none;
+        }
       `}</style>
     </>
   )

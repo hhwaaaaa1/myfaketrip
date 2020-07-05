@@ -6,14 +6,14 @@ import * as S from './GlobalHeader.styled'
 function GlobalHeader(): JSX.Element {
   return (
     <S.Header>
-      <div>
-        <div>
-          <h1>
+      <S.HeaderInner>
+        <S.HeaderColumn>
+          <S.CILogo>
             <S.Logo src="/logo.png" alt="my fake trip" />
-          </h1>
-          <div>
-            <input type="search" placeholder="여행지나 상품을 검색해보세요." title="전체 검색" />
-            <button type="button">삭제</button>
+          </S.CILogo>
+          <S.GlobalSearch>
+            <S.GlobalSearchField type="search" placeholder="여행지나 상품을 검색해보세요." title="전체 검색" />
+            <S.GlobalSearchFieldDeleteButton type="button">삭제</S.GlobalSearchFieldDeleteButton>
             <Popper>
               <ul>
                 <li>
@@ -24,25 +24,45 @@ function GlobalHeader(): JSX.Element {
                 </li>
               </ul>
             </Popper>
-          </div>
-        </div>
-        <div>
-          <Link href="#">파트너 등록하기</Link>
-          <Link href="#">로그인</Link>
-          <Link href="#">회원가입</Link>
-        </div>
-      </div>
-      <div>
-        <nav>
-          <Link href="#">홈</Link>
-          <Link href="#">투어&amp;티켓</Link>
-          <Link href="#">항공권</Link>
-          <Link href="#">숙소</Link>
-          <Link href="#">국내골프</Link>
-          <Link href="#">패키지</Link>
-          <Link href="#">할인혜택</Link>
-        </nav>
-      </div>
+          </S.GlobalSearch>
+        </S.HeaderColumn>
+        <S.HeaderColumn>
+          <Link href="#" passHref>
+            <S.GlobalLink>파트너 등록하기</S.GlobalLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalLink>로그인</S.GlobalLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalLink>회원가입</S.GlobalLink>
+          </Link>
+        </S.HeaderColumn>
+      </S.HeaderInner>
+      <S.NavInner>
+        <S.GlobalNav>
+          <Link href="#" passHref>
+            <S.GlobalNavLink current>홈</S.GlobalNavLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalNavLink>투어&amp;티켓</S.GlobalNavLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalNavLink>항공권</S.GlobalNavLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalNavLink>숙소</S.GlobalNavLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalNavLink>국내골프</S.GlobalNavLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalNavLink>패키지</S.GlobalNavLink>
+          </Link>
+          <Link href="#" passHref>
+            <S.GlobalNavLink>할인혜택</S.GlobalNavLink>
+          </Link>
+        </S.GlobalNav>
+      </S.NavInner>
     </S.Header>
   )
 }
