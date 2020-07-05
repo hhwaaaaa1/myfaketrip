@@ -29,7 +29,7 @@ export const GlobalSearchField = styled.input`
   height: 45px;
   padding: 0 45px 0 15px;
   border-radius: 5px;
-  background: #eee;
+  background: #fafafa;
 `
 
 export const GlobalSearchFieldDeleteButton = styled.button`
@@ -46,7 +46,7 @@ export const CILogo = styled.h1`
 `
 
 export const Logo = styled.img`
-  width: 100px;
+  width: 85px;
 `
 
 export const GlobalLink = styled.a`

@@ -20,6 +20,11 @@ function Hotels(): JSX.Element {
           font: 400 14px -apple-system, BlinkMacSystemFont, Malgun Gothic, Roboto, Helvetica, Arial, sans-serif;
         }
 
+        * {
+          box-sizing: border-box;
+          outline: none;
+        }
+
         h1,
         h2,
         h3,
@@ -33,6 +38,7 @@ function Hotels(): JSX.Element {
           padding: 0;
           font: inherit;
           border: 0;
+          background: none;
         }
 
         button {
@@ -45,6 +51,12 @@ function Hotels(): JSX.Element {
           font: inherit;
           color: inherit;
           text-decoration: none;
+        }
+
+        fieldset {
+          margin: 0;
+          padding: 0;
+          border: 0;
         }
       `}</style>
     </>

@@ -1,14 +1,15 @@
 import React from 'react'
 import Popper from '@src/components/common/Popper'
+import * as S from './HotelSearchBar.styled'
 
 function HotelSearchBar(): JSX.Element {
   return (
-    <div>
-      <form>
-        <fieldset>
-          <legend>여행지 또는 숙소명</legend>
-          <div>
-            <input type="text" defaultValue="제주도" />
+    <S.SearchBar>
+      <S.SearchForm>
+        <S.SearchFieldset>
+          <S.SearchLegend>여행지 또는 숙소명</S.SearchLegend>
+          <S.SearchField>
+            <S.SearchControl as="input" type="text" defaultValue="제주도" />
             <Popper>
               <ul>
                 <li>
@@ -19,23 +20,23 @@ function HotelSearchBar(): JSX.Element {
                 </li>
               </ul>
             </Popper>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>숙소 날짜</legend>
-          <div>
-            <button type="button" title="선택 창 열기">
+          </S.SearchField>
+        </S.SearchFieldset>
+        <S.SearchFieldset>
+          <S.SearchLegend>숙소 날짜</S.SearchLegend>
+          <S.SearchField>
+            <S.SearchControl as="button" type="button" title="선택 창 열기">
               8월 9일 (일) - 8월 10일 (월)
-            </button>
+            </S.SearchControl>
             <Popper>달력</Popper>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>객실 수, 인원</legend>
-          <div>
-            <button type="button" title="선택 창 열기">
+          </S.SearchField>
+        </S.SearchFieldset>
+        <S.SearchFieldset>
+          <S.SearchLegend>객실 수, 인원</S.SearchLegend>
+          <S.SearchField>
+            <S.SearchControl as="button" type="button" title="선택 창 열기">
               객실 1개, 총 2명
-            </button>
+            </S.SearchControl>
             <Popper>
               <div>
                 <div>
@@ -74,11 +75,11 @@ function HotelSearchBar(): JSX.Element {
                 </div>
               </div>
             </Popper>
-          </div>
-        </fieldset>
-        <button type="button">검색</button>
-      </form>
-    </div>
+          </S.SearchField>
+        </S.SearchFieldset>
+        <S.SearchButton type="button">검색</S.SearchButton>
+      </S.SearchForm>
+    </S.SearchBar>
   )
 }
 
