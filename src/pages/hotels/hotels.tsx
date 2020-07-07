@@ -1,12 +1,14 @@
 import React from 'react'
 import GlobalHeader from '@src/components/common/GlobalHeader'
 import HotelSearchBar from './components/HotelSearchBar'
+import HotelContents from './components/HotelContents'
 
 function Hotels(): JSX.Element {
   return (
     <>
       <GlobalHeader />
       <HotelSearchBar />
+      <HotelContents />
       <style jsx global>{`
         html {
           font-size: 10px;
